@@ -25,11 +25,11 @@ void run(void *arg)
     struct thread *t2 = thread_create(pr, NULL);
     thread_add_runqueue(t1);
     thread_add_runqueue(t1);
+    thread_yield();
     thread_add_runqueue(t1);
     thread_add_runqueue(t2); //t2
     thread_add_runqueue(t1);
 	thread_yield();
-    thread_yield();
     thread_yield();
     thread_exit();
 }

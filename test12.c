@@ -7,23 +7,26 @@ void run(void*);
 
 void f1(void *arg)
 {
-	printf("hello 2\n");
+	printf("f1\n");
+	thread_yield();
+	printf("exiting f1\n");
 	thread_exit(); //testing to see exit does exit
-	printf("failed!!\n");
+	printf("failed!! (should not print this)\n");
 }
 
 void f2(void *arg)
 {
-   struct thread *t = arg;
-   thread_add_runqueue(t);
-   printf("hello 1\n");
+   printf("f2\n");
+   thread_yield();
+   printf("exiting f2\n");
+   thread_exit();
 }
 
 void run(void *arg)
 {
     struct thread *t1 = thread_create(f1, NULL);
-    struct thread *t2 = thread_create(f2, t1);
-       
+    struct thread *t2 = thread_create(f2, NULL);
+    thread_add_runqueue(t1);       
     thread_add_runqueue(t2);
     thread_exit();
 }

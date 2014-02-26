@@ -35,11 +35,6 @@ void go(void *arg)
 {
     struct thread *tspawn = thread_create(spawn, NULL);
     thread_add_runqueue(tspawn);
-    thread_add_runqueue(tspawn);
-    thread_add_runqueue(tspawn);
-    thread_add_runqueue(tspawn);
-    thread_add_runqueue(tspawn);
-    thread_add_runqueue(tspawn);
     printf("exiting go function\n");
     thread_exit();
 }

@@ -15,20 +15,25 @@ simple argument passing test with an array
 multiple threads combined with argument passing
 ####test8
 ping pong, passing an arg between threads
+####test9
+adding a thread to the runqueue multiple times
+####test10
+running a thread which was passed as an argument to another thread
+####test11
+testing to see if a thread exits cleanly without the use of thread_exit
+####test12
+testing that thread_exit actually exits the thread
 
 ##TODO
-###cases:
+####cases:
 - ~~runqueue ordering~~
 - ~~multi yield~~
 - ~~stack preservation~~
 - ~~cases testing arguments passed to the functions~~
-- case testing two creates in a row
-- cases for dispatch/schedule
-- case for adding a thread to the runqueue multiple times in a row
-- case for adding a thread to the runqueue multiple times between yields
-- case for thread_exit twice in a row (should exit the first time)
-- case for exit then yield (should exit upon exit)
-- case for exit then create (should exit upon exit)
-- case for no thread_exit (see if the call stack pops the ret address succesfully)
-
-####maybe make a script to run diff
+- ~~case testing two creates in a row~~
+- ~~case for adding a thread to the runqueue multiple times in a row~~
+- ~~case for adding a thread to the runqueue multiple times between yields~~
+- ~~case for checking that thread_exit does exit~~
+- ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
+#### finish expected_output
+####maybe make a script to run diff..?
