@@ -13,6 +13,8 @@ very simple argument passing test with an int
 simple argument passing test with an array
 ####test7
 multiple threads combined with argument passing
+####test8
+ping pong, passing an arg between threads
 
 ##TODO
 ###cases:
