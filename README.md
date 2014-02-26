@@ -24,6 +24,8 @@ testing to see if a thread exits cleanly without the use of thread_exit
 ####test12
 testing that thread_exit actually exits the thread
 
+###Let me know if you think any of these are too much of a corner case?
+
 ##TODO
 ####cases:
 - ~~runqueue ordering~~
