@@ -1,0 +1,14 @@
+creating thread 1
+start threading
+f1
+f1 yield 1
+creating thread 2
+f1 yield 2
+f2
+f2 yield 1
+f1 yield 3
+finishing f2
+f1 yield 4
+f1 yield 5
+finishing f1
+exited

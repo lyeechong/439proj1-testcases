@@ -1,0 +1,24 @@
+fib 0
+1 squared is 1
+fib 1
+2 squared is 4
+fib 1
+3 squared is 9
+fib 2
+4 squared is 16
+fib 3
+5 squared is 25
+fib 5
+6 squared is 36
+fib 8
+7 squared is 49
+fib 13
+8 squared is 64
+fib 21
+9 squared is 81
+fib 34
+fib 55
+fib 89
+fib 144
+fib 233
+fib 377
