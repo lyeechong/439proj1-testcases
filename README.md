@@ -7,6 +7,13 @@ tests for correct behavior with multiple yields
 tests for correct behavior with multiple yields with only one thread
 ####test4
 is a little fun. Does fibonacci numbers and squares. Tests for not corrupting the local variables on the call stack I suppose.
+####test5
+very simple argument passing test with an int
+####test6
+simple argument passing test with an array
+####test7
+multiple threads combined with argument passing
+
 ##TODO
 ###cases:
 - cases testing arguments passed to the functions
