@@ -19,4 +19,4 @@ is a little fun. Does fibonacci numbers and squares. Tests for not corrupting th
 - case for exit then create (should exit upon exit)
 - case for no thread_exit (see if the call stack pops the ret address succesfully)
 
-###maybe make a script to run diff
+####maybe make a script to run diff
