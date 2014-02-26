@@ -7,7 +7,8 @@ tests for correct behavior with multiple yields
 tests for correct behavior with multiple yields with only one thread
 ####test4
 is a little fun. Does fibonacci numbers and squares. Tests for not corrupting the local variables on the call stack I suppose.
-###TODO cases:
+##TODO
+###cases:
 - cases testing arguments passed to the functions
 - case testing two creates in a row
 - cases for dispatch/schedule
@@ -17,3 +18,5 @@ is a little fun. Does fibonacci numbers and squares. Tests for not corrupting th
 - case for exit then yield (should exit upon exit)
 - case for exit then create (should exit upon exit)
 - case for no thread_exit (see if the call stack pops the ret address succesfully)
+
+###maybe make a script to run diff
