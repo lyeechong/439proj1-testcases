@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "threads.h"
+
+void spawn(void*);
+void run(void*);
+void go(void*);
+void pr(void*);
+
+void spawn(void *arg)
+{
+    struct thread *trun = thread_create(pr, NULL);
+    struct thread *tpr = thread_create(pr, trun);
+    thread_yield();
+    thread_add_runqueue(trun);
+    thread_add_runqueue(trun);
+    thread_add_runqueue(trun);                
+    thread_exit();
+}
+
+void pr(void *arg)
+{
+    printf("hello\n");
+    thread_exit();
+}
+
+void run(void *arg)
+{
+    struct thread *t = arg;
+    thread_add_runqueue(t);
+    thread_yield();
+    thread_exit();
+}
+
+void go(void *arg)
+{
+    struct thread *tspawn = thread_create(spawn, NULL);
+    thread_add_runqueue(tspawn);
+    thread_add_runqueue(tspawn);
+    thread_add_runqueue(tspawn);
+    thread_add_runqueue(tspawn);
+    thread_add_runqueue(tspawn);
+    thread_add_runqueue(tspawn);
+    thread_exit();
+}
+
+int main(int argc, char **argv)
+{
+    struct thread *t1 = thread_create(go, NULL);
+    thread_add_runqueue(t1);
+    thread_start_threading();		
+    return 0;
+}
