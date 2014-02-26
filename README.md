@@ -35,5 +35,7 @@ testing that thread_exit actually exits the thread
 - ~~case for adding a thread to the runqueue multiple times between yields~~
 - ~~case for checking that thread_exit does exit~~
 - ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
-#### finish expected_output
-####maybe make a script to run diff..?
+
+####need to finish creating the expected_output files
+
+####make a script to run diff..?
