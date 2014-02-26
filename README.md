@@ -18,6 +18,9 @@ ping pong, passing an arg between threads
 
 ##TODO
 ###cases:
+- ~~runqueue ordering~~
+- ~~multi yield~~
+- ~~stack preservation~~
 - ~~cases testing arguments passed to the functions~~
 - case testing two creates in a row
 - cases for dispatch/schedule
