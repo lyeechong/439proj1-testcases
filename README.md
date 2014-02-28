@@ -17,8 +17,9 @@ simple argument passing test with an array
 multiple threads combined with argument passing
 ####test8
 ping pong, passing an arg between threads
-####test9
-adding a thread to the runqueue multiple times
+####~~test9~~
+~~adding a thread to the runqueue multiple times~~
+threw out test 9 since it was too implementation specific on how they implemented the runqueue (either as a separate structure or within the thread struct)
 ####test10
 running a thread which was passed as an argument to another thread
 ####test11
@@ -35,8 +36,6 @@ testing that thread_exit actually exits the thread
 - ~~stack preservation~~
 - ~~cases testing arguments passed to the functions~~
 - ~~case testing two creates in a row~~
-- ~~case for adding a thread to the runqueue multiple times in a row~~
-- ~~case for adding a thread to the runqueue multiple times between yields~~
 - ~~case for checking that thread_exit does exit~~
 - ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
 
