@@ -36,6 +36,6 @@ int main(int argc, char **argv)
     struct thread *t = thread_create(run, NULL);
     thread_add_runqueue(t);
     thread_start_threading();
-    printf("exited")
+    printf("exited");
     return 0;
 }
