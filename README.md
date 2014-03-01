@@ -1,5 +1,4 @@
 #Testcases for Project 2 (threads)
-###throw out test9 since it is implementation specific
 
 ####test1
 tests for correct behavior for the runqueue order
@@ -38,7 +37,5 @@ testing that thread_exit actually exits the thread
 - ~~case testing two creates in a row~~
 - ~~case for checking that thread_exit does exit~~
 - ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
-
-####need to finish creating the expected_output files
 
 ####make a script to run diff..?
