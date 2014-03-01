@@ -1,4 +1,6 @@
 #Testcases for Project 2 (threads)
+###throw out test9 since it is implementation specific
+
 ####test1
 tests for correct behavior for the runqueue order
 ####test2

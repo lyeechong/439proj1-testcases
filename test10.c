@@ -10,7 +10,7 @@ void pr(void*);
 void spawn(void *arg)
 {
     struct thread *tpr = thread_create(pr, NULL);
-    struct thread *trun = thread_create(trun, pr);
+    struct thread *trun = thread_create(trun, tpr);
     thread_yield();
     thread_add_runqueue(trun);
     thread_exit();
