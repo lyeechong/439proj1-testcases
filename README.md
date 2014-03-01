@@ -36,8 +36,6 @@ testing that thread_exit actually exits the thread
 - ~~stack preservation~~
 - ~~cases testing arguments passed to the functions~~
 - ~~case testing two creates in a row~~
-- ~~case for adding a thread to the runqueue multiple times in a row~~
-- ~~case for adding a thread to the runqueue multiple times between yields~~
 - ~~case for checking that thread_exit does exit~~
 - ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
 
