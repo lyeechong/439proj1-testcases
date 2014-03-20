@@ -45,4 +45,5 @@ testing to see if a thread exits cleanly without the use of thread_exit
   | |-test2.c
   | |-test2_expected_out
   | |-etc..
+  |-student_submission_folder
 </pre>
