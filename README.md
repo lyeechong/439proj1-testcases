@@ -35,4 +35,14 @@ testing to see if a thread exits cleanly without the use of thread_exit
 - ~~case for checking that thread_exit does exit~~
 - ~~case for no thread_exit (see if the call stack pops the ret address succesfully)~~
 
-####make a script to run diff..?
+##Grading script setup
+<pre>
+.
+  |-grade.sh
+  |-439proj2-testcases
+  | |-test1.c
+  | |-test1_expected_out
+  | |-test2.c
+  | |-test2_expected_out
+  | |-etc..
+</pre>
